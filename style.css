@@ -1,0 +1,152 @@
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --second-family: "SF Pro", sans-serif;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+}
+
+body {
+  background: linear-gradient(180deg, #1a1a1a 0%, #000 100%);
+  background-repeat: no-repeat; /* Prevent background repeating */
+  background-attachment: fixed; /* Makes the gradient stay fixed on scroll */
+}
+
+header {
+  background: #a0fdbf;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  padding: 5% 10%;
+}
+
+main {
+  background-image: url("/img/rectangle.png"); /* Replace with your image URL */
+  background-position: top right; /* Fixes image to the top-right */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: auto; /* Ensures the image keeps its original size */
+  padding: 5% 10%;
+}
+
+.logo {
+  margin: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: 2px solid #a0fdbf;
+  border-radius: 30px;
+  padding: 48px;
+  text-align: center;
+  color: #a0fdbf;
+}
+
+.card h1 {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.card h2 {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 120%;
+}
+
+footer {
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  color: #a0fdbf;
+  column-gap: 30px;
+}
+
+.dates {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: stretch;
+  height: 150px;
+}
+
+.links-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-content: stretch;
+  column-gap: 10%;
+  flex-grow: 1;
+}
+
+.links {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+  row-gap: 6px;
+}
+
+.links a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  color: #a0fdbf;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 620px) {
+  img {
+    max-width: 100%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: baseline;
+  }
+
+  .links-block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
