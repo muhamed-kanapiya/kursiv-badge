@@ -40,7 +40,7 @@ header {
   padding: 5% 10%;
 }
 
-main {
+.main {
   background-image: url("/img/rectangle.png"); /* Replace with your image URL */
   background-position: top right; /* Fixes image to the top-right */
   background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -78,7 +78,7 @@ main {
   line-height: 120%;
 }
 
-footer {
+.badge-footer {
   padding: 5% 10%;
   display: flex;
   flex-direction: row;
@@ -137,7 +137,7 @@ footer {
     max-width: 100%;
   }
 
-  footer {
+  .badge-footer {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
@@ -157,4 +157,149 @@ footer {
   .card h2 {
     font-size: 20px;
   }
+}
+
+.badge-photos {
+  background: #fff;
+  padding: 0 5% 5% 5%;
+  border-bottom: 2px #858585 dotted;
+}
+
+.badge-photo-place {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+
+.badge-photos h2 {
+  margin-bottom: 6px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #000;
+}
+
+.badge-photos p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 120%;
+  color: #000;
+  margin-bottom: 26px;
+}
+
+.sign18 {
+  margin-bottom: 26px;
+}
+
+.time {
+  background: #fff;
+  padding: 5%;
+  border-bottom: 2px #858585 dotted;
+}
+
+.time h2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 120%;
+  color: #000;
+  margin-bottom: 9px;
+}
+
+.time p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 120%;
+  color: #000;
+  margin-bottom: 9px;
+}
+
+.timesheet {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 120%;
+  color: #000;
+  margin-top: 52px;
+}
+
+.timesheet strong {
+  font-weight: 700;
+}
+
+.website {
+  margin-top: 393px;
+  margin-bottom: 106px;
+}
+
+.org {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.location {
+  background: #fff;
+  padding: 5%;
+}
+
+.location h2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 120%;
+  color: #000;
+}
+
+.location p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 120%;
+  color: #000;
+}
+
+iframe {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.mapqr {
+  padding-left: 46px;
+  padding-bottom: 51px;
+  border-bottom: 2px solid #000;
+  position: relative;
+}
+
+.mapqr p {
+  margin-bottom: 30px;
+}
+
+.map-pin {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.map-qr {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.ticket-num {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 120%;
+  text-align: center;
+  color: #000;
+  margin-top: 32px;
+  text-align: center;
 }
